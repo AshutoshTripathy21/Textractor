@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Text Extractor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Image to Text Extractor</h1>
+
+        <div id="upload-section">
+            <label class="custom-file-upload">
+                <input type="file" id="fileInput" accept="image/*">
+                📤 Choose Image
+            </label>
+            <button id="uploadBtn" onclick="uploadFile()">Extract Text</button>
+            <div class="progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="output" class="hidden">
+        <h2>Extracted Text:</h2>
+        <pre id="text-content"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
